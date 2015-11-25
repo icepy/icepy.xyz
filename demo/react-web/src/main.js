@@ -45,7 +45,7 @@ const InboxList = React.createClass({
 			    <tbody>
 			    {inboxInfo.map((info,i) => {
 			    	return (
-		    			<tr key={("icepy"+i)}>
+		    			<tr key={("icepy"+i)} onClick={this.handle.bind(this)}>
 		    				<td>{info}</td>
 		    			</tr>
 		    		)
