@@ -18,41 +18,54 @@ const App = React.createClass({
     render:function(){
         return (
           	<div className="am-container">
-          		<div>
-          			<button type="button" className="am-btn am-btn-warning">
-	          			<Link to='/inbox'>获取列表</Link>
-	          		</button>
-	          		<button type="button" className="am-btn am-btn-warning">
-	          			<Link to='/about'>关于我</Link>
-	          		</button>
-          		</div>
           		{this.props.children}
           	</div>
         );
     }
 });
 
+const Navigation = React.createClass({
+	render:function(){
+		return (
+  			<div>
+  				<button type="button" className="am-btn am-btn-warning">
+	      			<Link to='/inbox'>获取列表</Link>
+	      		</button>
+	      		<button type="button" className="am-btn am-btn-warning">
+	      			<Link to='/about'>关于我</Link>
+	      		</button>
+  			</div>
+		)
+	}
+});
+
 const InboxList = React.createClass({
 	render:function(){
-		let inboxInfo = this.props.inboxInfo;
+		let inboxInfo = this.props.inboxInfo.map((info,i)=>{
+			return (
+				<tr key={("icepy"+i)} onClick={this.handle}>
+    				<td>{info}</td>
+    			</tr>
+			)
+		});
 		return(
-			<table className="am-table">
-				 <thead>
-			        <tr>
-			            <th>Inbox</th>
-			        </tr>
-			    </thead>
-			    <tbody>
-			    {inboxInfo.map((info,i) => {
-			    	return (
-		    			<tr key={("icepy"+i)} onClick={this.handle.bind(this)}>
-		    				<td>{info}</td>
-		    			</tr>
-		    		)
-			    })}
-				</tbody>
-			</table>
+			<div>
+				<Navigation/>
+				<table className="am-table">
+					 <thead>
+				        <tr>
+				            <th>Inbox</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				    	{inboxInfo}
+					</tbody>
+				</table>
+			</div>
 		)
+	},
+	handle:function(e){
+		console.log(e)
 	}
 });
 
@@ -75,6 +88,7 @@ const About = React.createClass({
 	render:function(){
 		return (
 			<div className="am-container">
+				<Navigation/>
 				<AboutMe/>
 			</div>
 		)
@@ -84,9 +98,11 @@ const About = React.createClass({
 const AboutMe = React.createClass({
 	render:function(){
 		return (
-			<h1>
-				icepy
-			</h1>
+			<div className="am-container">
+				<h1>
+					icepy
+				</h1>
+			</div>
 		)
 	}
 })
