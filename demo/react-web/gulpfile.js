@@ -65,3 +65,30 @@ gulp.task('js:webpack',function(callback){
 });
 
 gulp.task('default',['js:webpack']);
+
+
+/**
+ *  JSX语法检查
+ */
+
+var eslint = require('gulp-eslint');
+
+gulp.task('jsx',function(){
+    return gulp.src('./src/*.js')
+        .pipe(eslint({
+            plugins: [
+                'react'
+            ],
+            parser: 'babel-eslint',
+            ecmaFeatures: {
+                'jsx': true
+            },
+            rules:{
+                'semi':2
+            },
+            env:{
+                'es6':true
+            }
+        }))
+        .pipe(eslint.format())
+});

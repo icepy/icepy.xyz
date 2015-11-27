@@ -2,11 +2,35 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Router,Route,Link} from 'react-router';
 
+
+class TableView extends React.Component{
+	shouldComponentUpdate(){
+		return true;
+	}
+	render(){
+		let value = this.props.date.getTime();
+		let style = {
+			paddingTop:'10px'
+		};
+		return(
+			<div style={style}>
+				<input type="text" placeholder="table view" defaultValue={value} onChange={this.handlerChange}/>
+				It is {this.props.date.toTimeString()}
+			</div>
+		);
+	}
+	handlerChange(event){
+		this.setState({
+			tableValue:event.target.value.substr(0,50)
+		});
+	}
+}
+
 const App = React.createClass({
     getInitialState:function(){
       	return{
         	router: window.location.hash.substr(1)
-      	}
+      	};
     },
     componentDidMount:function(){
     	window.addEventListener('hashchange',()=>{
@@ -16,8 +40,11 @@ const App = React.createClass({
     	});
     },
     render:function(){
+    	let style = {
+    		paddingTop:'15px'
+    	};
         return (
-          	<div className="am-container">
+          	<div className="am-container" style={style}>
           		{this.props.children}
           	</div>
         );
@@ -35,7 +62,7 @@ const Navigation = React.createClass({
 	      			<Link to='/about'>关于我</Link>
 	      		</button>
   			</div>
-		)
+		);
 	}
 });
 
@@ -43,13 +70,17 @@ const InboxList = React.createClass({
 	render:function(){
 		let inboxInfo = this.props.inboxInfo.map((info,i)=>{
 			return (
-				<tr key={("icepy"+i)} onClick={this.handle}>
+				<tr key={("icepy"+i)} onClick={this.handleClick.bind(this,i)}>
     				<td>{info}</td>
     			</tr>
-			)
+			);
 		});
+		let style = {
+			color:'red',
+			fontSize:'12px'
+		};
 		return(
-			<div>
+			<div style={style}>
 				<Navigation/>
 				<table className="am-table">
 					 <thead>
@@ -62,10 +93,11 @@ const InboxList = React.createClass({
 					</tbody>
 				</table>
 			</div>
-		)
+		);
 	},
-	handle:function(e){
-		console.log(e)
+	handleClick:function(e,i){
+		console.log(e);
+		console.log(i);
 	}
 });
 
@@ -73,14 +105,14 @@ const Inbox = React.createClass({
 	getInitialState:function(){
 		return{
 			inboxInfo:['icepy','wower','books']
-		}
+		};
 	},
 	render:function(){
 		return (
 			<div className="am-container">
 				<InboxList inboxInfo={this.state.inboxInfo}/>
 			</div>
-		)
+		);
 	}
 });
 
@@ -91,21 +123,23 @@ const About = React.createClass({
 				<Navigation/>
 				<AboutMe/>
 			</div>
-		)
+		);
 	}
 });
 
 const AboutMe = React.createClass({
 	render:function(){
+		let style = {
+			color:'red',
+			fontSize:'12px'
+		};
 		return (
-			<div className="am-container">
-				<h1>
-					icepy
-				</h1>
+			<div className="am-container" style={style}>
+				<TableView date={new Date()}/>
 			</div>
-		)
+		);
 	}
-})
+});
 
 /**
  * 	browserify-shim
