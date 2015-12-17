@@ -53,8 +53,6 @@
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -63,214 +61,47 @@
 
 	var _reactRouter = __webpack_require__(160);
 
+	var _date = __webpack_require__(211);
+
+	var _date2 = _interopRequireDefault(_date);
+
+	var _about = __webpack_require__(213);
+
+	var _about2 = _interopRequireDefault(_about);
+
+	var _inbox = __webpack_require__(215);
+
+	var _inbox2 = _interopRequireDefault(_inbox);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var TableView = (function (_React$Component) {
-		_inherits(TableView, _React$Component);
-
-		function TableView() {
-			_classCallCheck(this, TableView);
-
-			return _possibleConstructorReturn(this, Object.getPrototypeOf(TableView).apply(this, arguments));
-		}
-
-		_createClass(TableView, [{
-			key: 'shouldComponentUpdate',
-			value: function shouldComponentUpdate() {
-				return true;
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				var value = this.props.date.getTime();
-				var style = {
-					paddingTop: '10px'
-				};
-				return _react2.default.createElement(
-					'div',
-					{ style: style },
-					_react2.default.createElement('input', { type: 'text', placeholder: 'table view', defaultValue: value, onChange: this.handlerChange }),
-					'It is ',
-					this.props.date.toTimeString()
-				);
-			}
-		}, {
-			key: 'handlerChange',
-			value: function handlerChange(event) {
-				this.setState({
-					tableValue: event.target.value.substr(0, 50)
-				});
-			}
-		}]);
-
-		return TableView;
-	})(_react2.default.Component);
-
 	var App = _react2.default.createClass({
-		displayName: 'App',
+	  displayName: 'App',
+	  getInitialState: function getInitialState() {
+	    return {
+	      router: window.location.hash.substr(1)
+	    };
+	  },
+	  componentDidMount: function componentDidMount() {
+	    var _this = this;
 
-		getInitialState: function getInitialState() {
-			return {
-				router: window.location.hash.substr(1)
-			};
-		},
-		componentDidMount: function componentDidMount() {
-			var _this2 = this;
-
-			window.addEventListener('hashchange', function () {
-				_this2.setState({
-					router: window.location.hash.substr(1)
-				});
-			});
-		},
-		render: function render() {
-			var style = {
-				paddingTop: '15px'
-			};
-			return _react2.default.createElement(
-				'div',
-				{ className: 'am-container', style: style },
-				this.props.children
-			);
-		}
+	    window.addEventListener('hashchange', function () {
+	      _this.setState({
+	        router: window.location.hash.substr(1)
+	      });
+	    });
+	  },
+	  render: function render() {
+	    var style = {
+	      paddingTop: '15px'
+	    };
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'am-container', style: style },
+	      this.props.children
+	    );
+	  }
 	});
-
-	var Navigation = _react2.default.createClass({
-		displayName: 'Navigation',
-
-		render: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(
-					'button',
-					{ type: 'button', className: 'am-btn am-btn-warning' },
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: '/inbox' },
-						'获取列表'
-					)
-				),
-				_react2.default.createElement(
-					'button',
-					{ type: 'button', className: 'am-btn am-btn-warning' },
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: '/about' },
-						'关于我'
-					)
-				)
-			);
-		}
-	});
-
-	var InboxList = _react2.default.createClass({
-		displayName: 'InboxList',
-
-		render: function render() {
-			var _this3 = this;
-
-			var inboxInfo = this.props.inboxInfo.map(function (info, i) {
-				return _react2.default.createElement(
-					'tr',
-					{ key: "icepy" + i, onClick: _this3.handleClick.bind(_this3, i) },
-					_react2.default.createElement(
-						'td',
-						null,
-						info
-					)
-				);
-			});
-			var style = {
-				color: 'red',
-				fontSize: '12px'
-			};
-			return _react2.default.createElement(
-				'div',
-				{ style: style },
-				_react2.default.createElement(Navigation, null),
-				_react2.default.createElement(
-					'table',
-					{ className: 'am-table' },
-					_react2.default.createElement(
-						'thead',
-						null,
-						_react2.default.createElement(
-							'tr',
-							null,
-							_react2.default.createElement(
-								'th',
-								null,
-								'Inbox'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'tbody',
-						null,
-						inboxInfo
-					)
-				)
-			);
-		},
-		handleClick: function handleClick(e, i) {
-			console.log(e);
-			console.log(i);
-		}
-	});
-
-	var Inbox = _react2.default.createClass({
-		displayName: 'Inbox',
-
-		getInitialState: function getInitialState() {
-			return {
-				inboxInfo: ['icepy', 'wower', 'books']
-			};
-		},
-		render: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ className: 'am-container' },
-				_react2.default.createElement(InboxList, { inboxInfo: this.state.inboxInfo })
-			);
-		}
-	});
-
-	var About = _react2.default.createClass({
-		displayName: 'About',
-
-		render: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ className: 'am-container' },
-				_react2.default.createElement(Navigation, null),
-				_react2.default.createElement(AboutMe, null)
-			);
-		}
-	});
-
-	var AboutMe = _react2.default.createClass({
-		displayName: 'AboutMe',
-
-		render: function render() {
-			var style = {
-				color: 'red',
-				fontSize: '12px'
-			};
-			return _react2.default.createElement(
-				'div',
-				{ className: 'am-container', style: style },
-				_react2.default.createElement(TableView, { date: new Date() })
-			);
-		}
-	});
-
 	/**
 	 * 	browserify-shim
 	 *
@@ -281,16 +112,16 @@
 	 *    	"react-router":"global:ReactRouter"
 	 *	}
 	 */
-
 	(0, _reactDom.render)(_react2.default.createElement(
-		_reactRouter.Router,
-		null,
-		_react2.default.createElement(
-			_reactRouter.Route,
-			{ path: '/', component: App },
-			_react2.default.createElement(_reactRouter.Route, { path: 'about', component: About }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'inbox', component: Inbox })
-		)
+	  _reactRouter.Router,
+	  null,
+	  _react2.default.createElement(
+	    _reactRouter.Route,
+	    { path: '/', component: App },
+	    _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'inbox', component: _inbox2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'date', component: _date2.default })
+	  )
 	), document.getElementById('container'));
 
 /***/ },
@@ -24996,6 +24827,332 @@
 
 	exports['default'] = useBasename;
 	module.exports = exports['default'];
+
+/***/ },
+/* 211 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _navigation = __webpack_require__(212);
+
+	var _navigation2 = _interopRequireDefault(_navigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var DateHandler = function DateHandler() {
+		_classCallCheck(this, DateHandler);
+	};
+
+	var DateReact = _react2.default.createClass({
+		displayName: 'DateReact',
+		getInitialState: function getInitialState() {
+			return {
+				"dateString": null
+			};
+		},
+		render: function render() {
+			var dateString = '';
+			if (this.state.dateString) {
+				dateString = this.state.dateString;
+			};
+			var style = {
+				"marginTop": "20px"
+			};
+			var pStyle = {
+				"paddingTop": "5px"
+			};
+			return _react2.default.createElement(
+				'div',
+				{ className: 'am-container' },
+				_react2.default.createElement(_navigation2.default, null),
+				_react2.default.createElement(
+					'button',
+					{ style: style, type: 'button', className: 'am-btn am-btn-warning', onClick: this.onDateClickHandler },
+					'获取当前时间'
+				),
+				_react2.default.createElement(
+					'p',
+					{ style: pStyle },
+					dateString
+				)
+			);
+		},
+		onDateClickHandler: function onDateClickHandler(e) {
+			var date = new Date();
+			var dateString = '';
+			dateString += date.getFullYear() + '年-' + (date.getMonth() + 1) + '月-' + date.getDate() + '日-';
+			dateString += date.getHours() + '时-' + date.getMinutes() + '分-' + date.getSeconds() + '秒';
+			this.setState({
+				dateString: dateString
+			});
+		}
+	});
+
+	module.exports = DateReact;
+
+/***/ },
+/* 212 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(160);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Navigation = _react2.default.createClass({
+		displayName: 'Navigation',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'button',
+					{ type: 'button', className: 'am-btn am-btn-warning' },
+					_react2.default.createElement(
+						_reactRouter.Link,
+						{ to: '/inbox' },
+						'获取列表'
+					)
+				),
+				_react2.default.createElement(
+					'button',
+					{ type: 'button', className: 'am-btn am-btn-warning' },
+					_react2.default.createElement(
+						_reactRouter.Link,
+						{ to: '/about' },
+						'关于我'
+					)
+				),
+				_react2.default.createElement(
+					'button',
+					{ type: 'button', className: 'am-btn am-btn-warning' },
+					_react2.default.createElement(
+						_reactRouter.Link,
+						{ to: '/date' },
+						'关于日期'
+					)
+				)
+			);
+		}
+	});
+
+	module.exports = Navigation;
+
+/***/ },
+/* 213 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _InputComponent = __webpack_require__(214);
+
+	var _InputComponent2 = _interopRequireDefault(_InputComponent);
+
+	var _navigation = __webpack_require__(212);
+
+	var _navigation2 = _interopRequireDefault(_navigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var AboutMe = _react2.default.createClass({
+		displayName: 'AboutMe',
+		render: function render() {
+			var style = {
+				color: 'red',
+				fontSize: '12px'
+			};
+			return _react2.default.createElement(
+				'div',
+				{ className: 'am-container', style: style },
+				_react2.default.createElement(_InputComponent2.default, { date: new Date() })
+			);
+		}
+	});
+
+	var About = _react2.default.createClass({
+		displayName: 'About',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'am-container' },
+				_react2.default.createElement(_navigation2.default, null),
+				_react2.default.createElement(AboutMe, null)
+			);
+		}
+	});
+
+	module.exports = About;
+
+/***/ },
+/* 214 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var InputComponent = (function (_React$Component) {
+		_inherits(InputComponent, _React$Component);
+
+		function InputComponent() {
+			_classCallCheck(this, InputComponent);
+
+			return _possibleConstructorReturn(this, Object.getPrototypeOf(InputComponent).apply(this, arguments));
+		}
+
+		_createClass(InputComponent, [{
+			key: 'shouldComponentUpdate',
+			value: function shouldComponentUpdate() {
+				return true;
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				var value = '毫秒：' + this.props.date.getTime();
+				var style = {
+					paddingTop: '10px'
+				};
+				return _react2.default.createElement(
+					'div',
+					{ style: style },
+					_react2.default.createElement('input', { type: 'text', placeholder: 'table view', defaultValue: value, onChange: this.handlerChange }),
+					_react2.default.createElement(
+						'p',
+						null,
+						'It is ',
+						this.props.date.toTimeString()
+					)
+				);
+			}
+		}, {
+			key: 'handlerChange',
+			value: function handlerChange(event) {
+				this.setState({
+					tableValue: event.target.value.substr(0, 50)
+				});
+			}
+		}]);
+
+		return InputComponent;
+	})(_react2.default.Component);
+
+	module.exports = InputComponent;
+
+/***/ },
+/* 215 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _navigation = __webpack_require__(212);
+
+	var _navigation2 = _interopRequireDefault(_navigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var InboxList = _react2.default.createClass({
+		displayName: 'InboxList',
+		render: function render() {
+			var _this = this;
+
+			var inboxInfo = this.props.inboxInfo.map(function (info, i) {
+				return _react2.default.createElement(
+					'tr',
+					{ key: "icepy" + i, onClick: _this.handleClick.bind(_this, i) },
+					_react2.default.createElement(
+						'td',
+						null,
+						info
+					)
+				);
+			});
+			var style = {
+				color: 'red',
+				fontSize: '12px'
+			};
+			return _react2.default.createElement(
+				'div',
+				{ style: style },
+				_react2.default.createElement(_navigation2.default, null),
+				_react2.default.createElement(
+					'table',
+					{ className: 'am-table' },
+					_react2.default.createElement(
+						'thead',
+						null,
+						_react2.default.createElement(
+							'tr',
+							null,
+							_react2.default.createElement(
+								'th',
+								null,
+								'Inbox'
+							)
+						)
+					),
+					_react2.default.createElement(
+						'tbody',
+						null,
+						inboxInfo
+					)
+				)
+			);
+		},
+		handleClick: function handleClick(e, i) {
+			console.log(e);
+			console.log(i);
+		}
+	});
+
+	var Inbox = _react2.default.createClass({
+		displayName: 'Inbox',
+		getInitialState: function getInitialState() {
+			return {
+				inboxInfo: ['icepy', 'wower', 'books']
+			};
+		},
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'am-container' },
+				_react2.default.createElement(InboxList, { inboxInfo: this.state.inboxInfo })
+			);
+		}
+	});
+
+	module.exports = Inbox;
 
 /***/ }
 /******/ ]);
