@@ -17,6 +17,16 @@ const AboutMe = React.createClass({
 });
 
 const About = React.createClass({
+
+	componentWillMount(){
+		console.log(this)
+		console.log('--------WillMount 之前')
+	},
+
+	componentDidMount(){
+		console.log('--------DidMount 之后')
+	},
+
 	render(){
 		return (
 			<div className="am-container">

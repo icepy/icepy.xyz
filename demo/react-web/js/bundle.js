@@ -24834,6 +24834,8 @@
 
 	'use strict';
 
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -24846,10 +24848,26 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var DateHandler = function DateHandler() {
-		_classCallCheck(this, DateHandler);
-	};
+	var DateHelper = (function () {
+		function DateHelper() {
+			_classCallCheck(this, DateHelper);
+		}
 
+		_createClass(DateHelper, [{
+			key: 'dateToString',
+			value: function dateToString() {
+				var date = new Date();
+				var dateString = '';
+				dateString += date.getFullYear() + '年-' + (date.getMonth() + 1) + '月-' + date.getDate() + '日-';
+				dateString += date.getHours() + '时-' + date.getMinutes() + '分-' + date.getSeconds() + '秒';
+				return dateString;
+			}
+		}]);
+
+		return DateHelper;
+	})();
+
+	var dateHelper = new DateHelper();
 	var DateReact = _react2.default.createClass({
 		displayName: 'DateReact',
 		getInitialState: function getInitialState() {
@@ -24885,16 +24903,12 @@
 			);
 		},
 		onDateClickHandler: function onDateClickHandler(e) {
-			var date = new Date();
-			var dateString = '';
-			dateString += date.getFullYear() + '年-' + (date.getMonth() + 1) + '月-' + date.getDate() + '日-';
-			dateString += date.getHours() + '时-' + date.getMinutes() + '分-' + date.getSeconds() + '秒';
+			var dateString = dateHelper.dateToString();
 			this.setState({
 				dateString: dateString
 			});
 		}
 	});
-
 	module.exports = DateReact;
 
 /***/ },
@@ -24987,6 +25001,13 @@
 
 	var About = _react2.default.createClass({
 		displayName: 'About',
+		componentWillMount: function componentWillMount() {
+			console.log(this);
+			console.log('--------WillMount 之前');
+		},
+		componentDidMount: function componentDidMount() {
+			console.log('--------DidMount 之后');
+		},
 		render: function render() {
 			return _react2.default.createElement(
 				'div',
@@ -25025,7 +25046,13 @@
 		function InputComponent() {
 			_classCallCheck(this, InputComponent);
 
-			return _possibleConstructorReturn(this, Object.getPrototypeOf(InputComponent).apply(this, arguments));
+			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(InputComponent).call(this));
+
+			_this.state = {
+				'indexDB': 'v0.0.1'
+			};
+			_this.inputIndex = 0;
+			return _this;
 		}
 
 		_createClass(InputComponent, [{
@@ -25034,11 +25061,19 @@
 				return true;
 			}
 		}, {
+			key: 'componentDidMount',
+			value: function componentDidMount() {
+				console.log('InputComponent');
+			}
+		}, {
 			key: 'render',
 			value: function render() {
 				var value = '毫秒：' + this.props.date.getTime();
 				var style = {
 					paddingTop: '10px'
+				};
+				var buttonTop = {
+					marginTop: '10px'
 				};
 				return _react2.default.createElement(
 					'div',
@@ -25049,6 +25084,23 @@
 						null,
 						'It is ',
 						this.props.date.toTimeString()
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'indexDB ',
+						this.state.indexDB
+					),
+					_react2.default.createElement(
+						'p',
+						{ ref: 'myIndexCoding' },
+						'indexCoding ',
+						InputComponent.props.indexCoding
+					),
+					_react2.default.createElement(
+						'button',
+						{ style: buttonTop, type: 'button', className: 'am-btn am-btn-warning', onClick: this.fetchIndexCodingVersion.bind(this, event) },
+						'获取 IndexCoding'
 					)
 				);
 			}
@@ -25056,14 +25108,25 @@
 			key: 'handlerChange',
 			value: function handlerChange(event) {
 				this.setState({
-					tableValue: event.target.value.substr(0, 50)
+					tableValue: event.target.value.substr(0, 50),
+					indexDB: 'v0.0.' + this.inputIndex++
 				});
+			}
+		}, {
+			key: 'fetchIndexCodingVersion',
+			value: function fetchIndexCodingVersion(event) {
+				var myIndexCoding = this.refs.myIndexCoding;
+				console.log(myIndexCoding);
 			}
 		}]);
 
 		return InputComponent;
 	})(_react2.default.Component);
 
+	;
+	InputComponent.props = {
+		'indexCoding': 'v0.0.2'
+	};
 	module.exports = InputComponent;
 
 /***/ },

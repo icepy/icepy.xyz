@@ -1,12 +1,17 @@
 import React from 'react';
 import Navigation from './navigation';
 
-class DateHandler{
-
+class DateHelper{
+	dateToString(){
+		let date = new Date();
+		let dateString = '';
+		dateString += date.getFullYear()+'年-'+(date.getMonth()+1)+'月-'+date.getDate()+'日-';
+		dateString += date.getHours()+'时-'+date.getMinutes()+'分-'+date.getSeconds()+'秒';
+		return dateString;
+	}
 }
-
+let dateHelper = new DateHelper();
 const DateReact = React.createClass({
-
 	getInitialState(){
 		return{
 			"dateString":null
@@ -32,14 +37,10 @@ const DateReact = React.createClass({
 		);
 	},
 	onDateClickHandler(e){
-		var date = new Date();
-		var dateString = '';
-		dateString += date.getFullYear()+'年-'+(date.getMonth()+1)+'月-'+date.getDate()+'日-';
-		dateString += date.getHours()+'时-'+date.getMinutes()+'分-'+date.getSeconds()+'秒';
+		var dateString = dateHelper.dateToString();
 		this.setState({
 			dateString:dateString
 		});
 	}
 });
-
 module.exports = DateReact;
