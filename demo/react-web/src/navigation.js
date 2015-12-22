@@ -14,6 +14,12 @@ const Navigation = React.createClass({
 	      		<button type="button" className="am-btn am-btn-warning">
 	      			<Link to='/date'>关于日期</Link>
 	      		</button>
+	      		<button type="button" className="am-btn am-btn-warning">
+	      			<Link to='/animation'>普通动画</Link>
+	      		</button>
+	      		<button type="button" className="am-btn am-btn-warning">
+	      			<Link to='/componentAnimation'>React组件动画</Link>
+	      		</button>
   			</div>
 		);
 	}
