@@ -26,7 +26,7 @@ const InboxList = React.createClass({
 		);
 	},
 	handleClick(e,i){
-		console.log(e);
+		console.log(e.clientX);
 		console.log(i);
 	}
 });
@@ -48,16 +48,19 @@ const Inbox = React.createClass({
 			marginBottom:'10px'
 		};
 		return (
-			<div className="am-container">
+			<div className="am-container icepy" onClick={this.icepyEvents}>
 				<Navigation/>
-				<button style={buttonStyle} type="button" className="am-btn am-btn-success" onClick={this.addOnceList}>add</button>
+				<button style={buttonStyle} type="button" className="am-btn am-btn-success" onClick={this.addOnceList.bind(this,buttonStyle)}>add</button>
 				<button style={buttonStyle} type="button" className="am-btn am-btn-danger" onClick={this.removeOnceList}>remove</button>
 				<InboxList inboxInfo={this.state.inboxInfo}/>
 			</div>
 		);
 	},
-	addOnceList(e){
+	addOnceList(p,e){
 		console.log(e);
+		console.log(p);
+		e.stopPropagation();
+		e.preventDefault();
 		let items = this.state.inboxInfo;
 		items.push('style'+addIndex++);
 		this.setState({
@@ -66,11 +69,15 @@ const Inbox = React.createClass({
 	},
 	removeOnceList(e){
 		let items = this.state.inboxInfo;
+		console.log(this)
 		items.pop();
 		this.setState({
 			inboxInfo:items
 		});
-	}
+	},
+	icepyEvents(e){
+		console.log('事件传播');
+	}	
 });
 
 module.exports = Inbox;

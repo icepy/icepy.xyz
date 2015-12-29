@@ -5,6 +5,8 @@ import DateReact from './date';
 import About from './about';
 import Inbox from './inbox';
 import DefaultAnimation from './animation';
+import ComponentsAnimation from './componentAnimation';
+import LowLevel from './lowLevel';
 
 const App = React.createClass({
     getInitialState(){
@@ -47,6 +49,8 @@ render((
       		<Route path="inbox" component={Inbox} />
       		<Route path="date" component={DateReact} />
       		<Route path="animation" component={DefaultAnimation} />
+      		<Route path="componentAnimation" component={ComponentsAnimation} />
+      		<Route path="lowLevel" component={LowLevel} />
 		</Route>
 	</Router>
 ),document.getElementById('container'));

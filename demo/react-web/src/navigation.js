@@ -20,6 +20,9 @@ const Navigation = React.createClass({
 	      		<button type="button" className="am-btn am-btn-warning">
 	      			<Link to='/componentAnimation'>React组件动画</Link>
 	      		</button>
+	      		<button type="button" className="am-btn am-btn-warning">
+	      			<Link to='/lowLevel'>React 底层动画API</Link>
+	      		</button>
   			</div>
 		);
 	}

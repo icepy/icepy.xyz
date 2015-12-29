@@ -15,6 +15,59 @@
           opacity: 0.01;
           transition: opacity .5s ease-in;
         }
+        .range-enter {
+          opacity: 0.01;
+        }
+
+        .range-enter.range-enter-active {
+          opacity: 1;
+          transition: opacity 500ms ease-in;
+        }
+
+        .range-leave {
+          opacity: 1;
+        }
+
+        .range-leave.range-leave-active {
+          opacity: 0.01;
+          transition: opacity 300ms ease-in;
+        }
+    </style>
+
+    <style type="text/css">
+        .compAnimation li{
+            padding: .8rem .2rem;
+            position: relative;
+            display: block;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid #dedede;
+            border-width: 1px 0;
+        }
+        .transition li{
+            padding: .8rem .2rem;
+            position: relative;
+            display: block;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid #dedede;
+            border-width: 1px 0;
+        }
+    </style>
+
+    <style type="text/css">
+        .carousel-enter{
+
+        }
+        .carousel-enter.carousel-enter-active{
+
+        }
+        .carousel-leave{
+
+        }
+        .carousel-leave.carousel-leave-active{
+            
+        }
     </style>
 </head>
 <body>
