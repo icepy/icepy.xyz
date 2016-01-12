@@ -14,7 +14,7 @@
 
 ## 浏览
 
-- 前端开发项目收集可访问：[Front-End-Develop-Guide](https://github.com/icepy/Front-End-Develop-Guide)
+- 前端开发指南可访问：[Front-End-Develop-Guide](https://github.com/icepy/Front-End-Develop-Guide)
 - [2015年前端提高效率的常用工具](2015年前端提高效率的常用工具.md)
 - [2015年对于“前端”开发我们需要什么？](对于“前端”开发我们需要什么？.md)
 
@@ -26,4 +26,4 @@
 - [前端杂谈与工具](https://github.com/icepy/_posts/labels/%E5%89%8D%E7%AB%AF%E6%9D%82%E8%B0%88%E4%B8%8E%E5%B7%A5%E5%85%B7)
 - [人生感悟与心态](https://github.com/icepy/_posts/labels/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F%E4%B8%8E%E5%BF%83%E6%80%81)
 
-## 各项Demo可访问：[Demo](#demo)
+## 各项Demo可访问：[Demo](https://github.com/icepy/_posts/tree/master/demo)
