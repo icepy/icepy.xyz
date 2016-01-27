@@ -8,6 +8,10 @@
 <img src="https://raw.githubusercontent.com/icepy/_posts/master/img/weixin.jpg" alt=""/><br>
 </div>
 
+**添加QQ群：《一起来学JS》**
+
+[347349470]()
+
 **关注微博，交个朋友**
 
 [@icepy](http://weibo.com/2455876310)
