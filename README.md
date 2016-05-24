@@ -1,6 +1,6 @@
 ## 写作迁移
 
-我们创建了 **Mulgore** 组织，我们将深度挖掘互联网最优秀的前端技术，提供高效的自我驱动学习与管理服务。，因此本人的写作正在迁移至[mulgore.github.io](https://github.com/mulgore/mulgore.github.io)和微信公众号。
+我们创建了 [Mulgore](https://github.com/mulgore) 组织，我们将深度挖掘互联网最优秀的前端技术，提供高效的自我驱动学习与管理服务。因此本人的写作正在迁移至[mulgore.github.io](https://github.com/mulgore/mulgore.github.io)和微信公众号。
 
 ## 微信公众号
 
