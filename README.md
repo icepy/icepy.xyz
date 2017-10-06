@@ -1,10 +1,7 @@
+## 关注
 
-![](https://raw.githubusercontent.com/icepy/none-writing/master/lake-1611044_1280.jpg)
-
-## 关注与我共创
-
-更多精彩内容可关注我的个人微信公众号：搜索fed-talk或者扫描下列二维码，也欢迎您将它分享给自己的朋友。
+推荐关注知乎专栏《象尘说》：[https://icepy.me/](https://icepy.me/) 或 搜索fed-talk或者扫描下列二维码，也欢迎您将它分享给自己的朋友。
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/icepy/none-writing/master/icepy-weixin.jpg" alt=""/><br>
+<img src="https://sfault-image.b0.upaiyun.com/590/922/590922694-5959ae725bffb_articlex" alt=""/><br>
 </div>
