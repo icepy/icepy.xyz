@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="阅读之前非Mac用户请自动忽略，此文针对Mac用户，我个人使用频率非常高，PC端开发者可以选择性的尝试部分工具。 终端工具安装homebrew，不装真对不起自己 ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  homebrew  换掉/bin/b">
+<meta name="keywords" content="随想">
+<meta property="og:type" content="article">
+<meta property="og:title" content="总结个人2015提高前端效率的方法和工具">
+<meta property="og:url" content="https://icepy.me/2015/07/14/2015-02/index.html">
+<meta property="og:site_name" content="五溪">
+<meta property="og:description" content="阅读之前非Mac用户请自动忽略，此文针对Mac用户，我个人使用频率非常高，PC端开发者可以选择性的尝试部分工具。 终端工具安装homebrew，不装真对不起自己 ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  homebrew  换掉/bin/b">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-07T14:56:41.432Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="总结个人2015提高前端效率的方法和工具">
+<meta name="twitter:description" content="阅读之前非Mac用户请自动忽略，此文针对Mac用户，我个人使用频率非常高，PC端开发者可以选择性的尝试部分工具。 终端工具安装homebrew，不装真对不起自己 ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  homebrew  换掉/bin/b">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="//gw.alicdn.com/tfs/TB1th9Efh9YBuNjy0FfXXXIsVXa-64-64.png">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="//gw.alicdn.com/tfs/TB1th9Efh9YBuNjy0FfXXXIsVXa-64-64.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="//gw.alicdn.com/tfs/TB1th9Efh9YBuNjy0FfXXXIsVXa-64-64.png">
+          
+        
+    
+    <!-- title -->
+    <title>总结个人2015提高前端效率的方法和工具</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="https://icepy.me/blockchain-navigate/">Blockchain Navigate</a></li>
+         
+          <li><a href="/about/">About me</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2015/07/20/2015-01/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://icepy.me/2015/07/14/2015-02/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://icepy.me/2015/07/14/2015-02/&text=总结个人2015提高前端效率的方法和工具"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://icepy.me/2015/07/14/2015-02/&is_video=false&description=总结个人2015提高前端效率的方法和工具"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=总结个人2015提高前端效率的方法和工具&body=Check out this article: https://icepy.me/2015/07/14/2015-02/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://icepy.me/2015/07/14/2015-02/&name=总结个人2015提高前端效率的方法和工具&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#阅读之前"><span class="toc-number">1.</span> <span class="toc-text">阅读之前</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#终端工具"><span class="toc-number">2.</span> <span class="toc-text">终端工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上述终端工具的配置可使用我的配置文件-使用指南"><span class="toc-number">3.</span> <span class="toc-text">上述终端工具的配置可使用我的配置文件 | 使用指南</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我常用的“前端”环境（包括node-mongodb-Hybrid-App）"><span class="toc-number">4.</span> <span class="toc-text">我常用的“前端”环境（包括node+mongodb+Hybrid App）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我常用的”前端”库或插件"><span class="toc-number">5.</span> <span class="toc-text">我常用的”前端”库或插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我常用的其他工具"><span class="toc-number">6.</span> <span class="toc-text">我常用的其他工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工具教程"><span class="toc-number">7.</span> <span class="toc-text">工具教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写在最后，我使用频率最高的工具是Github-。"><span class="toc-number">8.</span> <span class="toc-text">写在最后，我使用频率最高的工具是Github^_^。</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        总结个人2015提高前端效率的方法和工具
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">五溪</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2015-07-14T09:27:12.000Z" itemprop="datePublished">2015-07-14</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/随想/">随想</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="阅读之前"><a href="#阅读之前" class="headerlink" title="阅读之前"></a>阅读之前</h2><p>非Mac用户请自动忽略，此文针对Mac用户，我个人使用频率非常高，PC端开发者可以选择性的尝试部分工具。</p>
+<h2 id="终端工具"><a href="#终端工具" class="headerlink" title="终端工具"></a>终端工具</h2><p>安装homebrew，不装真对不起自己</p>
+<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre><ul>
+<li><a href="http://brew.sh/" target="_blank" rel="noopener">homebrew</a></li>
+</ul>
+<p>换掉/bin/bash请使用/bin/zsh，安装oh-my-zsh。</p>
+<pre><code>sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre><ul>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">oh-my-zsh</a></li>
+</ul>
+<p>使用homebrew安装tmux</p>
+<pre><code>brew install tmux
+</code></pre><ul>
+<li><a href="https://tmux.github.io/" target="_blank" rel="noopener">tmux</a></li>
+</ul>
+<p>安装vim bundle</p>
+<pre><code>git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+</code></pre><ul>
+<li><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="noopener">Vundle.vim</a></li>
+</ul>
+<p>安装nvm来管理node环境</p>
+<pre><code>brew install nvm
+</code></pre><ul>
+<li><a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a>    </li>
+</ul>
+<p>安装Xcode command line tools</p>
+<pre><code>xcode-select --install
+</code></pre><p>运行命令后，按照指引，你将完成 Xcode command line tools 安装</p>
+<p>目前个人使用Atom编辑器和vim结合开发”前端”，如果终端版vim使用不习惯，可以用Macvim（GUI）</p>
+<ul>
+<li><a href="https://atom.io/" target="_blank" rel="noopener">Atom</a></li>
+<li><a href="https://github.com/b4winckler/macvim" target="_blank" rel="noopener">macvim</a></li>
+</ul>
+<p>安装iTerm 2，你懂的</p>
+<ul>
+<li><a href="https://www.iterm2.com/" target="_blank" rel="noopener">iTerm 2</a></li>
+</ul>
+<p>我使用Dash来查询API文档</p>
+<ul>
+<li><a href="https://kapeli.com/dash" target="_blank" rel="noopener">Dash</a></li>
+</ul>
+<h2 id="上述终端工具的配置可使用我的配置文件-使用指南"><a href="#上述终端工具的配置可使用我的配置文件-使用指南" class="headerlink" title="上述终端工具的配置可使用我的配置文件 | 使用指南"></a>上述终端工具的配置可使用我的配置文件 | 使用指南</h2><pre><code>git clone https://github.com/icepy/icepy.vim.git ~/icepy.vim
+
+cp -r .vimrc ~/
+
+cp -r .vimrc.bundles ~/
+
+cp -r .tmux ~/
+
+cp -r .tmux.conf ~/
+
+cp -r .zshrc ~/
+
+或者
+
+cp -r ~/icepy.vim/* ~/
+</code></pre><ul>
+<li><a href="https://github.com/icepy/icepy.vim" target="_blank" rel="noopener">icepy vim shell conf </a></li>
+</ul>
+<p><strong>使用提示</strong>    </p>
+<blockquote>
+<p>如果不想使用YouCompleteMe可以注释掉，因为此需要Apple LLVM clang编译器</p>
+</blockquote>
+<blockquote>
+<p>vim目录，可以按F5    </p>
+</blockquote>
+<blockquote>
+<p>在终端输入tmux，control+b （按一下）然后再按D（注意是大写），如果想关闭control+b 再按shift+7</p>
+</blockquote>
+<blockquote>
+<p>使用nvm install v0.12.6 安装node环境</p>
+</blockquote>
+<blockquote>
+<p>sudo npm install -g npm （记得更新一下npm）</p>
+</blockquote>
+<blockquote>
+<p>我使用git来管理我的源代码</p>
+</blockquote>
+<blockquote>
+<p>:BundleInstall 或者 vim+PluginInstall+qall 来安装vim插件</p>
+</blockquote>
+<h2 id="我常用的“前端”环境（包括node-mongodb-Hybrid-App）"><a href="#我常用的“前端”环境（包括node-mongodb-Hybrid-App）" class="headerlink" title="我常用的“前端”环境（包括node+mongodb+Hybrid App）"></a>我常用的“前端”环境（包括node+mongodb+Hybrid App）</h2><p>我使用TypeScript来编写JavaScript代码，它的类型系统，面向对象的方式比较符合我的预期，而且我能在编译环节就可以排除错误，基本上团队写的代码都一样，维护起来不会出现JavaScript有一千个哈姆雷特的情况，况且TypeScript也是下一代Angularjs所采用的。</p>
+<pre><code>sudo npm install -g typescript
+
+tsc helloworld.ts
+
+sudo npm install -g tsd
+</code></pre><ul>
+<li><a href="http://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a></li>
+<li><a href="http://definitelytyped.org/tsd/" target="_blank" rel="noopener">d.ts</a></li>
+</ul>
+<p>我用tsd来处理第三方模块，这样才能让编译器通过编译。</p>
+<p><strong>node开发环境</strong></p>
+<p>forever可以在后台启用node服务，好用。</p>
+<ul>
+<li><a href="https://github.com/foreverjs/forever" target="_blank" rel="noopener">forever</a></li>
+</ul>
+<p>开发阶段使用它无需自己在终端不停的重启node服务</p>
+<ul>
+<li><a href="https://github.com/petruisfan/node-supervisor" target="_blank" rel="noopener">node-supervisor</a></li>
+</ul>
+<p>调试debug工具</p>
+<ul>
+<li><a href="https://github.com/node-inspector/node-inspector" target="_blank" rel="noopener">node-inspector</a></li>
+</ul>
+<p><strong>mongodb开发环境</strong></p>
+<pre><code>brew install mongodb
+</code></pre><p>配置文件在/usr/local/etc/mongod.conf</p>
+<pre><code>systemLog:
+      destination: file
+      path: /usr/local/var/log/mongodb/mongo.log
+      logAppend: true
+storage:
+      dbPath: /Users/xiangwenwen/mongodb/data
+net:
+      bindIp: 127.0.0.1
+</code></pre><p>在终端运行mongod –config /usr/local/etc/mongod.conf</p>
+<p>tmux session右窗口处运行mongo</p>
+<p><strong>浏览器端开发环境</strong></p>
+<p>主要使用bower来管理我的前端文件，虽然我不写CSS，但是我依然选择sassc来编译，这是C语言写的编译器可以翻译成CSS。</p>
+<pre><code>npm install -g bower
+
+brew install sassc
+</code></pre><p><strong>模块化和构建工具</strong></p>
+<p>关于模块化和构建工具，三年前使用着grunt和RequireJS，AMD CMD真没啥好争论的，一年前一直用着glup，而今年我准备将使用ES6 modules来做模块化，自动构建工具grunt+glup结合的方式。</p>
+<pre><code>npm install -g grunt-cli
+
+npm install -g glup
+</code></pre><p><strong>JavaScript</strong></p>
+<p>目前基本上已经全线使用ES5了，所以还要针对IE系列开发的同学可以忽略，HTML5特性也大量的在使用中，ES2015会是今年重点学习的方向。</p>
+<p>promises管理异步JavaScript是我处理回调的首选选择。</p>
+<p><strong>代码质量，这个目前基本不做了，因为TypeScript</strong></p>
+<ul>
+<li><a href="http://eslint.org/" target="_blank" rel="noopener">ESLint</a></li>
+<li><a href="http://jscs.info/" target="_blank" rel="noopener">JSCS</a></li>
+</ul>
+<p><strong>客户端模版</strong></p>
+<p>目前我在使用<a href="http://jade-lang.com/" target="_blank" rel="noopener">jade</a>，今年开始使用ES2015内置的模版。</p>
+<p><strong>调试工具</strong></p>
+<p>一个就够了，chrome tools。</p>
+<p>或者option + command + i Atmo调起chrome的调试工具，跟编辑器亲密合体。</p>
+<p><strong>Hybrid App</strong></p>
+<p>目前在使用ionic，尝试React Native。</p>
+<pre><code>npm install -g cordova ionic
+</code></pre><p><a href="http://ionicframework.com/" target="_blank" rel="noopener">ionic</a></p>
+<p><a href="https://facebook.github.io/react-native/" target="_blank" rel="noopener">React Native</a></p>
+<p>Hybrid App 调试工具，主要分为两个部分，一个是safari，另外一个是自己编写的iOS版调试日志工具<a href="https://github.com/icepy/MFLog" target="_blank" rel="noopener">MFLog</a>，可以嵌入到Hybrid App中，分为Objective-C和Swift版。</p>
+<h2 id="我常用的”前端”库或插件"><a href="#我常用的”前端”库或插件" class="headerlink" title="我常用的”前端”库或插件"></a>我常用的”前端”库或插件</h2><p>移动版的jQuery</p>
+<ul>
+<li><a href="https://github.com/madrobby/zepto" target="_blank" rel="noopener">zepto</a></li>
+</ul>
+<p>图表绘制库</p>
+<ul>
+<li><a href="https://github.com/ecomfe/echarts" target="_blank" rel="noopener">echarts</a></li>
+</ul>
+<p>工具类函数</p>
+<ul>
+<li><a href="https://lodash.com/docs" target="_blank" rel="noopener">lodash</a></li>
+</ul>
+<p>模块化</p>
+<ul>
+<li><a href="https://github.com/webpack/webpack" target="_blank" rel="noopener">webpack</a></li>
+<li><a href="https://github.com/jrburke/requirejs" target="_blank" rel="noopener">requirejs</a></li>
+</ul>
+<p>大框架</p>
+<ul>
+<li><a href="https://github.com/angular/angular.js" target="_blank" rel="noopener">Angular</a></li>
+</ul>
+<p>Angular UI</p>
+<ul>
+<li><a href="http://angular-ui.github.io/" target="_blank" rel="noopener">Angular UI</a></li>
+</ul>
+<p>Cordova Plugins</p>
+<ul>
+<li><a href="http://plugins.cordova.io/#/" target="_blank" rel="noopener">cordova plugins</a></li>
+</ul>
+<p>动画库</p>
+<ul>
+<li><a href="http://famous.org/" target="_blank" rel="noopener">famous</a></li>
+</ul>
+<p>构建API</p>
+<ul>
+<li><a href="https://github.com/restify/node-restify" target="_blank" rel="noopener">restify</a></li>
+<li><a href="http://dozerjs.com/" target="_blank" rel="noopener">dozerjs</a></li>
+</ul>
+<p>CMS</p>
+<ul>
+<li><a href="http://keystonejs.com/" target="_blank" rel="noopener">keystonejs</a></li>
+</ul>
+<p>Express 构建网站</p>
+<ul>
+<li><a href="http://expressjs.com/" target="_blank" rel="noopener">Express</a></li>
+</ul>
+<p>mongoose</p>
+<ul>
+<li><a href="https://github.com/Automattic/mongoose" target="_blank" rel="noopener">mongoose</a></li>
+</ul>
+<p>CSS UI</p>
+<ul>
+<li><a href="http://www.bootcss.com/" target="_blank" rel="noopener">Bootstrap</a></li>
+<li><a href="http://foundation.zurb.com/" target="_blank" rel="noopener">Foundation</a></li>
+<li><a href="http://nec.netease.com/" target="_blank" rel="noopener">netease</a></li>
+</ul>
+<p>async</p>
+<ul>
+<li><a href="https://github.com/caolan/async" target="_blank" rel="noopener">async</a></li>
+</ul>
+<p>hexo编写博客</p>
+<ul>
+<li><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">hexo</a></li>
+</ul>
+<h2 id="我常用的其他工具"><a href="#我常用的其他工具" class="headerlink" title="我常用的其他工具"></a>我常用的其他工具</h2><p>用来编写Api 契约文档</p>
+<ul>
+<li><a href="https://apiary.io/" target="_blank" rel="noopener">apiary</a></li>
+</ul>
+<p>模拟数据</p>
+<ul>
+<li><a href="http://mockjs.com/" target="_blank" rel="noopener">mockjs</a></li>
+</ul>
+<p>查看CSS HTML5的支持情况</p>
+<ul>
+<li><a href="http://caniuse.com/" target="_blank" rel="noopener">caniuse</a></li>
+</ul>
+<p>研究浏览器引擎内核的文献</p>
+<ul>
+<li><a href="http://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/?from=timeline&amp;isappinstalled=0" target="_blank" rel="noopener">浏览器的工作原理：新式网络浏览器幕后揭秘</a></li>
+</ul>
+<h2 id="工具教程"><a href="#工具教程" class="headerlink" title="工具教程"></a>工具教程</h2><ul>
+<li>关于<strong>homebrew</strong>的使用，我想官网的简体中文版应该够用了<a href="http://brew.sh/index_zh-cn.html" target="_blank" rel="noopener">http://brew.sh/index_zh-cn.html</a>，不过开着VPN可能会比较稳定。</li>
+<li><strong>zsh</strong>可以先看池老师写的一篇博文<a href="http://macshuo.com/?p=676" target="_blank" rel="noopener">终极 Shell</a>对它稍微有些了解，然后阅读<a href="https://wiki.archlinux.org/index.php/Zsh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87" target="_blank" rel="noopener">Zsh (简体中文)</a>)对配置有所了解。<strong>oh-my-zsh</strong>使用起来的话，基本上可以看一下<a href="http://ohmyz.sh/" target="_blank" rel="noopener">http://ohmyz.sh/</a>以有所了解。</li>
+<li><strong>tmux</strong>可以查看<a href="http://aquaregia.gitbooks.io/tmux-productive-mouse-free-development_zh/content/book-content/Preface.html" target="_blank" rel="noopener">《tmux: Productive Mouse-Free Development》中文翻译</a>，不过你可以先了解一下<a href="http://haoduoshipin.com/v/41" target="_blank" rel="noopener">tmux</a>是干嘛用的。</li>
+<li><strong>Vundle.vim</strong> 这是用来管理vim插件用的，使用是非常简单，可以看下<a href="http://foocoder.com/blog/mei-ri-vimcha-jian-kai-pian-zhi-vundle.html/" target="_blank" rel="noopener">每日vim插件–开篇之vundle</a>有所了解，关于比较详细的<strong>vim</strong>的使用，可以好好阅读<a href="https://github.com/yangyangwithgnu/use_vim_as_ide" target="_blank" rel="noopener">所需即所获：像 IDE 一样使用 vim</a></li>
+<li><strong>nvm</strong>是一个用来管理node环境的插件，可以使用brew来安装，关于使用可以看一下<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">https://github.com/creationix/nvm</a>项目</li>
+<li><strong>Xcode command line tools</strong>是Mac上独有的一套环境，关于它可以阅读一下<a href="https://developer.apple.com/search/index.php?q=Xcode%20command%20line%20tools" target="_blank" rel="noopener">Xcode command line tools</a></li>
+<li><strong>Atom</strong>是Github出来的一个开源编辑器跟sublime很类似，使用教程可以阅读一下<a href="http://wiki.jikexueyuan.com/project/atom/" target="_blank" rel="noopener">Atom 使用教程</a></li>
+<li><strong>iTerm 2</strong> 是一个增强版的shell终端，下载下来就好了，配置可以阅读一下<a href="http://www.iterm2.com/#/section/features/split_panes" target="_blank" rel="noopener">http://www.iterm2.com/#/section/features/split_panes</a>，什么是iTerm 2 ，我为什么需要它，以及我改如何使用它。</li>
+<li><strong>Dash</strong> 是一个来查看API文档的工具，没什么好说的，下载语言包就好，要是有钱可以买专业版</li>
+<li><strong>TypeScript</strong> 是一个JS的增强版，可以这么看<a href="http://14ms.net/typescript-00-index/" target="_blank" rel="noopener">TypeScript中文教程目录</a>，<strong>d.ts</strong>是应用第三方框架的时候用的扩展文件<a href="http://definitelytyped.org/tsd/" target="_blank" rel="noopener">http://definitelytyped.org/tsd/</a>，安装好两个环境就好了，主要是学习语言知识了</li>
+<li><strong>关于Nodejs</strong>，可以阅读<a href="http://blog.fens.me/series-nodejs/" target="_blank" rel="noopener">从零开始nodejs系列文章</a></li>
+<li><strong>forever</strong>可以看做一个node的守护进程，可以稍微阅读一下<a href="http://yansong.me/2013/02/27/use-forever-run-a-node-app-created-by-express.html" target="_blank" rel="noopener">使用forever运行nodejs应用</a></li>
+<li><strong>node-supervisor</strong>是可以提高node调试效率的一个工具，安装然后使用就好</li>
+<li><strong>node-inspector</strong>是nodejs的调试工具，可以在chrome上，<a href="https://cnodejs.org/topic/4f77c41f8a04d82a3d5dfcb9" target="_blank" rel="noopener">使用node-inspector调试Node.js应用</a></li>
+<li>关于<strong>mongodb</strong>的教程，可以阅读<a href="http://segmentfault.com/a/1190000002547229" target="_blank" rel="noopener">Mac下安装MongoDB 及使用教程</a>，更深入的阅读可以看看<a href="https://github.com/justinyhuang/the-little-mongodb-book-cn/blob/master/mongodb.md" target="_blank" rel="noopener">The Little MongoDB Book</a></li>
+<li><strong>bower</strong>是用来管理前端文件的，用npm安装好，可以先查询远程有没，如果有install一下，如果不想要了uninstall一下删除即可</li>
+<li><strong>sass</strong>的用法指南可以阅读一下<a href="http://www.ruanyifeng.com/blog/2012/06/sass.html" target="_blank" rel="noopener">SASS用法指南</a></li>
+<li>关于<strong>grunt和glup</strong>可以阅读<a href="http://www.gruntjs.net/" target="_blank" rel="noopener">Grunt简体中文版</a>和<a href="http://www.gulpjs.com.cn/" target="_blank" rel="noopener">gulp简体中文版</a></li>
+<li><strong>关于promises</strong>，可以稍微阅读<a href="http://liubin.github.io/promises-book/" target="_blank" rel="noopener">JavaScript Promise迷你书（中文版）</a></li>
+<li><strong>关于ES6</strong>，可以阅读<a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">ECMAScript 6入门</a></li>
+<li><strong>React Native</strong>是一个使用JS编写App的方案，稍微阅读下<a href="http://wiki.jikexueyuan.com/project/react-native/" target="_blank" rel="noopener">React Native 中文版</a>好了。</li>
+<li><strong>ionic</strong> 也是一个使用JS编写App的方案，<a href="https://github.com/ychow/ionic-guide" target="_blank" rel="noopener">ionic 中文指南</a></li>
+</ul>
+<p>其他常用的框架和库，我相信大多数人都能在网络上查阅到。</p>
+<h2 id="写在最后，我使用频率最高的工具是Github-。"><a href="#写在最后，我使用频率最高的工具是Github-。" class="headerlink" title="写在最后，我使用频率最高的工具是Github^_^。"></a>写在最后，我使用频率最高的工具是Github^_^。</h2>
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="https://icepy.me/blockchain-navigate/">Blockchain Navigate</a></li>
+         
+          <li><a href="/about/">About me</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#阅读之前"><span class="toc-number">1.</span> <span class="toc-text">阅读之前</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#终端工具"><span class="toc-number">2.</span> <span class="toc-text">终端工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上述终端工具的配置可使用我的配置文件-使用指南"><span class="toc-number">3.</span> <span class="toc-text">上述终端工具的配置可使用我的配置文件 | 使用指南</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我常用的“前端”环境（包括node-mongodb-Hybrid-App）"><span class="toc-number">4.</span> <span class="toc-text">我常用的“前端”环境（包括node+mongodb+Hybrid App）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我常用的”前端”库或插件"><span class="toc-number">5.</span> <span class="toc-text">我常用的”前端”库或插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我常用的其他工具"><span class="toc-number">6.</span> <span class="toc-text">我常用的其他工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工具教程"><span class="toc-number">7.</span> <span class="toc-text">工具教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写在最后，我使用频率最高的工具是Github-。"><span class="toc-number">8.</span> <span class="toc-text">写在最后，我使用频率最高的工具是Github^_^。</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://icepy.me/2015/07/14/2015-02/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://icepy.me/2015/07/14/2015-02/&text=总结个人2015提高前端效率的方法和工具"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://icepy.me/2015/07/14/2015-02/&is_video=false&description=总结个人2015提高前端效率的方法和工具"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=总结个人2015提高前端效率的方法和工具&body=Check out this article: https://icepy.me/2015/07/14/2015-02/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://icepy.me/2015/07/14/2015-02/&title=总结个人2015提高前端效率的方法和工具"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://icepy.me/2015/07/14/2015-02/&name=总结个人2015提高前端效率的方法和工具&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 icepy
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="https://icepy.me/blockchain-navigate/">Blockchain Navigate</a></li>
+         
+          <li><a href="/about/">About me</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-118762667-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
