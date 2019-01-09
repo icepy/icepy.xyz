@@ -15,9 +15,11 @@
 }
 
 .App-Content{
-  width: 580px;
   margin: 0 auto;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 580px;
 }
 
 .App-Content a{
