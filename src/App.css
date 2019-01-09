@@ -1,0 +1,25 @@
+.App-Header {
+  width: 100%;
+  background-color: #282c34;
+  height: 350px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-My-Des{
+  font-size: 14px;
+  color: #f92372;
+}
+
+.App-Content{
+  width: 580px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.App-Content a{
+  color: #0084FF;
+}
