@@ -11,7 +11,7 @@
 
 .App-My-Des{
   font-size: 14px;
-  color: #f92372;
+  color: #ffffff;
 }
 
 .App-Content{
@@ -20,6 +20,7 @@
   padding-left: 10px;
   padding-right: 10px;
   max-width: 580px;
+  font-size: 12px;
 }
 
 .App-Content a{

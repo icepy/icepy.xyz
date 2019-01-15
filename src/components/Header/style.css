@@ -18,6 +18,8 @@
 .header-title a{
   text-decoration: none;
   color: #000;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .header-title img {
@@ -35,6 +37,7 @@
   margin-right: 10px;
   text-decoration: none;
   color: rgba(0,0,0,.5);
+  font-size: 12px;
 }
 
 .header-nav-link a:hover{
