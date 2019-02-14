@@ -4,25 +4,13 @@ import meishiIcon from "../../img/meishi.png";
 
 const navLink = [
   {
-    name: "美食专栏",
-    link: "https://zhuanlan.zhihu.com/c_134626828"
-  },
-  {
-    name: "程序员专栏",
+    name: "我们可以学更多",
     link: "https://zhuanlan.zhihu.com/fed-talk"
   },
   {
-    name: "尤克里里专栏",
-    link: "https://zhuanlan.zhihu.com/uulili"
-  },
-  {
-    name: "知乎",
-    link: "https://www.zhihu.com/people/wen-xiang-34/activities"
-  },
-  {
-    name: "Github",
-    link: "https://github.com/icepy"
-  },
+    name: "周末例行",
+    link: "https://zhuanlan.zhihu.com/c_134626828"
+  }
 ];
 
 class Header extends Component {
