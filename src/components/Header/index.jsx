@@ -10,6 +10,10 @@ const navLink = [
   {
     name: "周末例行",
     link: "https://zhuanlan.zhihu.com/c_134626828"
+  },
+  {
+    name: "摩托车维修艺术",
+    link: "https://zhuanlan.zhihu.com/c_1079775594526412800"
   }
 ];
 
