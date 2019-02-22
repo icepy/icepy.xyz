@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import meishiIcon from "../../img/meishi.png";
+import myIcon from "../../img/icon.png";
 
 const navLink = [
   {
@@ -21,25 +21,27 @@ class Header extends Component {
   render(){
     return (
       <div className="header-container">
-        <div className="header-title">
-          <div><img src={ meishiIcon } alt="" /></div>
-          <a href="/">子曰五溪</a>
-        </div>
-        <div className="header-nav-link">
-          {
-            navLink.map((v,i) => {
-              return (
-                <a 
-                  key={i} 
-                  href={v.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {v.name}
-                </a>
-              )
-            })
-          }
+        <div className="header-content">
+          <div className="header-title">
+            <div><img src={ myIcon } alt="" /></div>
+            <a href="/">子曰五溪</a>
+          </div>
+          <div className="header-nav-link">
+            {
+              navLink.map((v,i) => {
+                return (
+                  <a 
+                    key={i} 
+                    href={v.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {v.name}
+                  </a>
+                )
+              })
+            }
+          </div>
         </div>
       </div>
     )

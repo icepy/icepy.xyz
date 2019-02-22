@@ -25,3 +25,18 @@
 .App-Content a{
   color: #0084FF;
 }
+
+.App-Header-Content{
+  margin: 0 auto;
+  max-width: 580px;
+  font-size: 12px;
+}
+
+.App-Image{
+  max-width: 350px;
+}
+
+.App-Svg{
+  margin-right: 5px;
+  height: 15px;
+}
