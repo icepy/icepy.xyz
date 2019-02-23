@@ -31,11 +31,6 @@ export default class Content extends Component {
             <em>I stared to work as a front-end developer from 2010 until now, had ever been employed by <strong>YuanGuang, Citrip and Alibaba Group</strong>. All of the different experience make me grow up in this field, and I also have accumulated so much knowledge and practical skills in not only front-end development, but also <strong>Engineering, Hybrid, Weex, Flutter as well as Node.js</strong>. Now I could say that I have already become a “well-appointed” engineer.</em>
           </p>
           <p>
-            <img 
-              src="https://img.shields.io/github/license/icepy/icepy.me.svg" 
-              className="App-Svg"
-              alt="license"
-            />
             <a 
               href="https://github.com/icepy/icepy.me/issues/new"
               target="_blank"
@@ -58,6 +53,11 @@ export default class Content extends Component {
                 alt="github followers"
               />
             </a>
+            <img 
+              src="https://img.shields.io/github/license/icepy/icepy.me.svg" 
+              className="App-Svg"
+              alt="license"
+            />
           </p>
           <p>
             我非常热爱美食和摩托车，拥有一辆春风NK250，喜欢自己折腾摩托车的维修和维护，如果你也热爱摩旅，不妨和我一起聊聊。
