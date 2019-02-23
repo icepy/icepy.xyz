@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import bgImage from "../../img/bg.jpg";
+import bgImage from "../../img/bg.png";
 import meishiImage from "../../img/meishi.png";
 import qixingImage from "../../img/qixing.png";
 
