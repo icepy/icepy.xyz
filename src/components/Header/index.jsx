@@ -4,7 +4,7 @@ import myIcon from "../../img/icon.png";
 
 const navLink = [
   {
-    name: "我们可以学更多",
+    name: "lightningMiners",
     link: "https://zhuanlan.zhihu.com/fed-talk"
   },
   {
