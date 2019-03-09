@@ -1,21 +1,7 @@
 import React, { Component } from 'react';
+// import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import './style.css';
 import myIcon from "../../img/icon.png";
-
-const navLink = [
-  {
-    name: "lightningMiners",
-    link: "https://zhuanlan.zhihu.com/fed-talk"
-  },
-  {
-    name: "周末例行",
-    link: "https://zhuanlan.zhihu.com/c_134626828"
-  },
-  {
-    name: "摩托车维修艺术",
-    link: "https://zhuanlan.zhihu.com/c_1079775594526412800"
-  }
-];
 
 class Header extends Component {
   render(){
@@ -27,20 +13,27 @@ class Header extends Component {
             <a href="/">子曰五溪</a>
           </div>
           <div className="header-nav-link">
-            {
-              navLink.map((v,i) => {
-                return (
-                  <a 
-                    key={i} 
-                    href={v.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {v.name}
-                  </a>
-                )
-              })
-            }
+            <a 
+              href="https://zhuanlan.zhihu.com/c_134626828"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              五溪小厨
+            </a>
+            <a 
+              href="https://zhuanlan.zhihu.com/fed-talk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              lightningMiners
+            </a>
+            <a 
+              href="https://zhuanlan.zhihu.com/c_1079775594526412800"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              摩托车维修艺术
+            </a>
           </div>
         </div>
       </div>
