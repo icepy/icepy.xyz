@@ -1,4 +1,16 @@
+# icepy.me
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![img](https://img.shields.io/github/license/icepy/icepy.me.svg)
+
+## 关于 icepy.me
+
+喜欢的话可以点 `Star` ，订阅请点 `Watch`，但千万不要 `Fork` 因为没有意义。目前主要在知乎专栏 [https://zhuanlan.zhihu.com/fed-talk](https://zhuanlan.zhihu.com/fed-talk) 上写内容，多探索点前端那些事儿。
+
+## Copyright
+
+仅用于学习、研究和交流，版权归于 [@icepy](https://icepy.me)，欢迎非商业转载，并在文章开头明显位置注明转载文章出处、作者即可，违者必究。
 
 ## Available Scripts
 
