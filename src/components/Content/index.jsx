@@ -15,16 +15,16 @@ export default class Content extends Component {
       <div>
         <div className="App-Header-Content">
           <div className="App-Header" style={bg}>
-            <h1 className="App-My-Tag">子曰五溪小营地</h1>
-            <div className="App-My-Des">给你的生活加点阳光 :)</div>
+            <h1 className="App-My-Tag">我</h1>
+            <div className="App-My-Des">安静的夜，但却是昨天。</div>
           </div>
         </div>
         <div className="App-Content">
           <p>
-            Hi，我是<strong>子曰五溪</strong>，网络ID <strong>icepy</strong>，花名 <strong>象尘</strong>，联系我请添加微信：<strong>icepy_1988</strong>。
+            Hi，我是<strong>“icepy”</strong>，花名 <strong>“象尘”</strong>，联系我请添加微信：<strong>icepy_1988</strong>。
           </p>
           <p>
-            <em>Hi, my name is <strong>Ziyuewuxi</strong>, my network ID is <strong>Icepy</strong> and you could also call me <strong>Xiangchen</strong>. If you are interested in what I am doing now, please contact me through my Wechat ID, which is <strong>icepy_1988</strong>.</em>
+            <em>Hi, my name is <strong>Icepy</strong>, you could also call me <strong>Xiangchen</strong>. If you are interested in what I am doing now, please contact me through my Wechat ID, which is <strong>icepy_1988</strong>.</em>
           </p>
           <p>作为永远都会写代码的程序猿，2010年开始从事编程的工作，前 <strong>远光-携程-阿里巴巴</strong> 员工，经历了从前端到大前端变革的整个过程，在 <strong>前端，工程化，Hybrid，Weex，Flutter，Node.js，混合架构领域</strong> 等方面有着非常丰富的实践和沉淀，于是成为了一名“核常兼备”很“完善”的工程师。</p>
           <p>

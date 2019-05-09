@@ -9,8 +9,7 @@ class Header extends Component {
       <div className="header-container">
         <div className="header-content">
           <div className="header-title">
-            <div><img src={ myIcon } alt="" /></div>
-            <a href="/">子曰五溪</a>
+            <div><a href="/"><img src={ myIcon } alt="" /></a></div>
           </div>
           <div className="header-nav-link">
             <a 
@@ -27,12 +26,19 @@ class Header extends Component {
             >
               lightningMiners
             </a>
-            <a 
-              href="https://zhuanlan.zhihu.com/c_1079775594526412800"
+            <a
+              href="https://zhuanlan.zhihu.com/c_1098520950282338304"
               target="_blank"
               rel="noopener noreferrer"
             >
-              摩托车维修艺术
+              映画
+            </a>
+            <a
+              href="https://github.com/icepy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
             </a>
           </div>
         </div>
