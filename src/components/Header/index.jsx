@@ -13,32 +13,32 @@ class Header extends Component {
           </div>
           <div className="header-nav-link">
             <a 
-              href="https://zhuanlan.zhihu.com/fed-talk"
+              href="https://zhuanlan.zhihu.com/c_134626828"
               target="_blank"
               rel="noopener noreferrer"
             >
-              lightningMiners
+              弗兰人的菜肴
+            </a>
+            <a 
+              href="https://blockflats.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              远程与天边
             </a>
             <a
               href="https://github.com/icepy"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              github
             </a>
-            <a
-              href="https://zhuanlan.zhihu.com/c_1098520950282338304"
+            < a 
+              href="https://zhuanlan.zhihu.com/fed-talk"
               target="_blank"
               rel="noopener noreferrer"
             >
-              映画
-            </a>
-            <a 
-              href="https://zhuanlan.zhihu.com/c_134626828"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              五溪小厨
+              lightningMiners
             </a>
           </div>
         </div>
