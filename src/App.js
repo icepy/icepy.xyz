@@ -11,17 +11,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
-          <div>
-            <Header />
-            <Route exact path="/" component={HomePage} />
-            {/* <Route path="/column" component={ColumnPage} />
-            <Route path="/cook" component={CookPage} /> */}
-            <Footer />
-          </div>
-        </Router>
+        <Header />
+        <HomePage />
+        <Footer />
       </div>
     );
+    // return (
+    //   <div className="App">
+    //     <Router>
+    //       <div>
+    //         <Header />
+    //         <Route exact path="/" component={HomePage} />
+    //         {/* <Route path="/column" component={ColumnPage} />
+    //         <Route path="/cook" component={CookPage} /> */}
+    //         <Footer />
+    //       </div>
+    //     </Router>
+    //   </div>
+    // );
   }
 }
 

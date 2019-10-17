@@ -26,7 +26,7 @@ export default class Content extends Component {
           <p>
             <em>Hi, my name is <strong>Icepy</strong>, you could also call me <strong>Xiangchen</strong>. If you are interested in what I am doing now, please contact me through my Wechat ID, which is <strong>icepy_1988</strong>.</em>
           </p>
-          <p>2010年开始从事编程的工作，前 <strong>远光-携程-阿里巴巴</strong> 员工，经历了从前端到大前端变革的整个过程，在 <strong>前端，工程化，Hybrid容器，Node.js，Go，跨平台架构领域</strong> 等方面有着非常丰富的实践和沉淀，于是成为了一名“核常兼备”很“完善”的工程师。</p>
+          <p>2010年开始从事编程的工作，前 <strong>远光-携程-阿里巴巴</strong> 员工，经历了从前端到大前端变革的整个过程，在 <strong>前端，工程化，Hybrid容器，Node.js，跨平台架构领域</strong> 等方面有着非常丰富的实践和沉淀，于是成为了一名“核常兼备”很“完善”的工程师。</p>
           <p>
             <em>I stared to work as a front-end developer from 2010 until now, had ever been employed by <strong>YuanGuang, Citrip and Alibaba Group</strong>. All of the different experience make me grow up in this field, and I also have accumulated so much knowledge and practical skills in not only front-end development, but also <strong>Engineering, Hybrid, well as Node.js </strong>. Now I could say that I have already become a “well-appointed” engineer.</em>
           </p>
