@@ -19,26 +19,19 @@ class Header extends Component {
             >
               弗兰人的菜肴
             </a>
-            <a 
-              href="https://blockflats.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              远程与天边
-            </a>
             <a
               href="https://github.com/icepy"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github
+              Github
             </a>
             < a 
               href="https://zhuanlan.zhihu.com/fed-talk"
               target="_blank"
               rel="noopener noreferrer"
             >
-              lightningMiners
+              LightningMiners
             </a>
           </div>
         </div>
