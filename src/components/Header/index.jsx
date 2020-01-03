@@ -19,19 +19,19 @@ class Header extends Component {
             >
               弗兰人的菜肴
             </a>
-            <a
-              href="https://github.com/icepy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
             < a 
               href="https://zhuanlan.zhihu.com/fed-talk"
               target="_blank"
               rel="noopener noreferrer"
             >
               LightningMiners
+            </a>
+            <a
+              href="https://github.com/icepy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
             </a>
           </div>
         </div>

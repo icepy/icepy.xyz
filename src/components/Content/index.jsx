@@ -15,8 +15,8 @@ export default class Content extends Component {
       <div>
         <div className="App-Header-Content">
           <div className="App-Header" style={bg}>
-            <h1 className="App-My-Tag">我</h1>
-            <div className="App-My-Des">安静的夜，但却是昨天。</div>
+            <h1 className="App-My-Tag">五溪</h1>
+            <div className="App-My-Des">我寄愁心与明月，随风直到夜郎西。</div>
           </div>
         </div>
         <div className="App-Content">
@@ -72,22 +72,28 @@ export default class Content extends Component {
             <img src={qixingImage} alt="NK250" className="App-Image" />
           </div>
           <p>
-            目前我在北京，从事自己喜欢的工作，快乐认真的生活。最后，我想感谢在我的人生旅途中，遇见的每一位朋友。
+            目前我在怀化，从事自己喜欢的工作，快乐认真的生活。
           </p>
           <p>
-            <em>I am living in Beijing now, doing the work I like, living a happy life. In the end, I have to say thanks to all the friend I have met, you are all valuable treasures to my life.</em>
+            <em>I am living in Huaihua、Faipha now, doing the work I like, living a happy life.</em>
+          </p>
+          <p>
+            最后，我想感谢在我的人生旅途中，遇见的每一位朋友。
+          </p>
+          <p>
+            <em>In the end, I have to say thanks to all the friend I have met, you are all valuable treasures to my life.</em>
           </p>
           <p>
             我的微博是 <a 
               href="https://weibo.com/2455876310/profile?topnav=1&wvr=6"
               target="_blank"
               rel="noopener noreferrer"
-            >@子曰五溪</a>，
+            >@五溪小哥</a>，
             <em>My Weibo is</em> <a 
               href="https://weibo.com/2455876310/profile?topnav=1&wvr=6"
               target="_blank"
               rel="noopener noreferrer"
-            >@子曰五溪</a>
+            >@五溪小哥</a>
           </p>
         </div>
       </div>
