@@ -6,7 +6,9 @@
 .header-content{
   height: 52px;
   margin: 0 auto;
-  max-width: 580px;
+  max-width: 550px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 12px;
   display: flex;
   flex-direction: row;

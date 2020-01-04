@@ -11,14 +11,14 @@
 
 .App-My-Des{
   font-size: 14px;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .App-Content{
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 580px;
+  max-width: 550px;
   font-size: 12px;
 }
 
@@ -28,7 +28,7 @@
 
 .App-Header-Content{
   margin: 0 auto;
-  max-width: 580px;
+  max-width: 550px;
   font-size: 12px;
 }
 
