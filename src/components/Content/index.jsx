@@ -89,12 +89,12 @@ export default class Content extends Component {
               href="https://weibo.com/2455876310/profile?topnav=1&wvr=6"
               target="_blank"
               rel="noopener noreferrer"
-            >@五溪小哥</a>，
+            >@五溪的溪</a>，
             <em>My Weibo is</em> <a 
               href="https://weibo.com/2455876310/profile?topnav=1&wvr=6"
               target="_blank"
               rel="noopener noreferrer"
-            >@五溪小哥</a>
+            >@五溪的溪</a>
           </p>
         </div>
       </div>
