@@ -22,17 +22,6 @@ export default class Content extends Component {
           <p>杨花落尽子规啼，闻道龙标过五溪。</p>
           <p>我寄愁心与明月，随风直到夜郎西。</p>
           <p>
-            <a 
-              href="https://github.com/icepy/icepy.me/issues/new"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img 
-                src="https://img.shields.io/github/issues/icepy/icepy.me.svg" 
-                className="App-Svg"
-                alt="issues"
-              />
-            </a>
             <a
               href="https://github.com/icepy"
               target="_blank"
@@ -51,50 +40,22 @@ export default class Content extends Component {
             />
           </p>
           <p>
-            大家好，我是<strong>“五溪(icepy)”</strong>，花名 <strong>“象尘”</strong>，联系我请添加微信：<strong>icepy_1988</strong>。
+            你好，我是<strong>“icepy（五溪）”</strong>，
+            2011年开始从事编程的工作，经历了从前端到大前端变革的整个过程，在 <strong>前端，工程化，Hybrid容器，Node.js，跨平台架构</strong> 等领域有着丰富的实践和沉淀，于是成为了一名“核常兼备”的工程师。
           </p>
           <p>
-            <em>Hi, my name is <strong>Wuxi(Icepy)</strong>, you could also call me <strong>Xiangchen</strong>. If you are interested in what I am doing now, please contact me through my Wechat ID, which is <strong>icepy_1988</strong>.</em>
+            在生活里，我非常喜欢烹饪食物和折腾摩托车的维修和维护，如果你也热爱摩托车旅行，不妨坐下来和我聊聊。
           </p>
-          <p>2011年开始从事编程的工作，前 <strong>远光-携程-阿里巴巴</strong> 员工，经历了从前端到大前端变革的整个过程，在 <strong>前端，工程化，Hybrid容器，Node.js，跨平台架构领域</strong> 等方面有着非常丰富的实践和沉淀，于是成为了一名“核常兼备”很“完善”的工程师。</p>
-          <p>
-            <em>I stared to work as a front-end developer from 2011 until now, had ever been employed by <strong>YuanGuang, Citrip and Alibaba Group</strong>. All of the different experience make me grow up in this field, and I also have accumulated so much knowledge and practical skills in not only front-end development, but also <strong>Engineering, Hybrid, well as Node.js </strong>. Now I could say that I have already become a “well-appointed” engineer.</em>
-          </p>
-          <p>
-            我非常热爱美食和摩托车，拥有一辆春风NK250，喜欢自己折腾摩托车的维修和维护，如果你也热爱摩旅，不妨和我一起聊聊。
-          </p>
-          <p>
-            <em>Except for work, I also love food and motorcycle. I have a Chunfeng NK250, and I usually do the maintenance of the motorcycle by myself, if you like to do Motorcycle Tours, I wish to have a chat with you, so just feel free to contact me.</em>
-          </p>
-          {/* <div align="center">
-            <img src={meishiImage} alt="美食" className="App-Image" />
-          </div>
-          <div align="center">
-            <img src={qixingImage} alt="NK250" className="App-Image" />
-          </div> */}
           <p>
             目前我在怀化，从事自己喜欢的工作，快乐认真的生活。
-          </p>
-          <p>
-            <em>I am living in Huaihua、Faipha now, doing the work I like, living a happy life.</em>
-          </p>
-          <p>
             最后，我想感谢在我的人生旅途中，遇见的每一位朋友。
           </p>
           <p>
-            <em>In the end, I have to say thanks to all the friend I have met, you are all valuable treasures to my life.</em>
-          </p>
-          <p>
-            我的微博是 <a 
+            我的微博是 <a
               href="https://weibo.com/2455876310/profile?topnav=1&wvr=6"
               target="_blank"
               rel="noopener noreferrer"
-            >@五溪的溪</a>，
-            <em>My Weibo is</em> <a 
-              href="https://weibo.com/2455876310/profile?topnav=1&wvr=6"
-              target="_blank"
-              rel="noopener noreferrer"
-            >@五溪的溪</a>
+            >@五溪的溪</a>，欢迎来撩。
           </p>
         </div>
       </div>

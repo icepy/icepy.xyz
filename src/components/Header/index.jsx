@@ -24,7 +24,7 @@ class Header extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LightningMiners
+              前端专栏
             </a>
             <a
               href="https://github.com/icepy"
