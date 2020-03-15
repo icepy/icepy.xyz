@@ -40,9 +40,12 @@ export default class Content extends Component {
             />
           </p>
           <p>
-            你好，我是<strong>“icepy（五溪）”</strong>，
-            2011年开始从事编程的工作，经历了从前端到大前端变革的整个过程，在 <strong>前端，工程化，Hybrid容器，Node.js，跨平台架构</strong> 等领域有着丰富的实践和沉淀，于是成为了一名“核常兼备”的工程师。
+            你好，我是<strong>“icepy（五溪）”</strong>。 
           </p>
+          <p>  
+            2011年开始从事编程的工作，经历了从前端到大前端变革的整个过程，深入理解 <strong>移动跨平台架构领域</strong> 的设计和原理，在 <strong>Web前端，移动Hybrid容器架构，小程序容器体系</strong> 上有着丰富的实践和沉淀，另外对 <strong>前端工程化体系，Node.js，Java，Go</strong> 有一定的涉猎和实践。
+          </p>
+          <p>在团队管理方面追求务实，有效沟通，有能力带领团队解决问题，完成目标，落实结果。</p>
           <p>
             在生活里，我非常喜欢烹饪食物和折腾摩托车的维修和维护，如果你也热爱摩托车旅行，不妨坐下来和我聊聊。
           </p>
