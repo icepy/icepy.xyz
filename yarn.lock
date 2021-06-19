@@ -133,6 +133,14 @@
     "@babel/helper-annotate-as-pure" "^7.14.5"
     regexpu-core "^4.7.1"
 
+"@babel/helper-define-map@^7.14.5":
+  version "7.14.5"
+  resolved "https://registry.yarnpkg.com/@babel/helper-define-map/-/helper-define-map-7.14.5.tgz#c1579b056a70a7da2f4a27ee492ec58f5ba3c439"
+  integrity sha512-spfQRnoChdYWwyFetQDBSDBgH42VskaquRI52kbLei5MjV7s3NPq30/sh2S3YdT20Ku/ZpaNnTVgmDo20NWylg==
+  dependencies:
+    "@babel/helper-function-name" "^7.14.5"
+    "@babel/types" "^7.14.5"
+
 "@babel/helper-define-polyfill-provider@^0.2.2":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-define-polyfill-provider/-/helper-define-polyfill-provider-0.2.3.tgz#0525edec5094653a282688d34d846e4c75e9c0b6"
