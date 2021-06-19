@@ -36,5 +36,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://icepy.me"
+  "homepage": "https://icepy.me",
+  "devDependencies": {
+    "@babel/helper-builder-react-jsx": "^7.14.5"
+  }
 }
