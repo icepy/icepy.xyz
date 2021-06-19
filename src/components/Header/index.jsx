@@ -12,26 +12,33 @@ class Header extends Component {
             <div><a href="/"><img src={ myIcon } alt="" /></a></div>
           </div>
           <div className="header-nav-link">
-            <a 
-              href="https://zhuanlan.zhihu.com/c_134626828"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              弗兰人的菜肴
-            </a>
-            < a 
-              href="https://zhuanlan.zhihu.com/fed-talk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              前端专栏
-            </a>
             <a
               href="https://github.com/icepy"
               target="_blank"
               rel="noopener noreferrer"
             >
               Github
+            </a>
+            <a
+              href="https://gitcoin.co/icepy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gitcoin
+            </a>
+            < a 
+              href="https://zhuanlan.zhihu.com/fed-talk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              专栏
+            </a>
+            < a 
+              href="https://www.acharvested.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              桑田
             </a>
           </div>
         </div>
