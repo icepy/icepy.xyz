@@ -33,11 +33,16 @@
   padding-left: 10px;
   padding-right: 10px;
   max-width: 550px;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.App-Content li{
+  margin-bottom: 5px;
 }
 
 .App-Content a{
   color: #0084FF;
+  text-decoration: none;
 }
 
 .App-Header-Content{
