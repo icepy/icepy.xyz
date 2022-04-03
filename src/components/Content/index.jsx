@@ -9,8 +9,6 @@ export default class Content extends Component {
         <div className="App-Header-Content">
           <div className="App-Header">
             <img src={bgImage} height="300" alt="" />
-            {/* <p>杨花落尽子规啼，闻道龙标过五溪。</p>
-            <p>我寄愁心与明月，随君直到夜郎西。</p> */}
           </div>
         </div>
         <div className="App-Content">
