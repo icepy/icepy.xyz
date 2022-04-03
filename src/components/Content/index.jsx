@@ -2,13 +2,17 @@ import React, { Component } from 'react';
 import './style.css';
 import bgImage from "../../img/bg.jpeg";
 
+const bg = { 
+  backgroundImage: `url(${bgImage})`,
+}
+
 export default class Content extends Component {
   render(){
     return (
       <div>
         <div className="App-Header-Content">
-          <div className="App-Header">
-            <img src={bgImage} height="300" alt="" />
+          <div className="App-Header" style={bg}>
+            {/* <img src={bgImage} height="300" alt="" /> */}
           </div>
         </div>
         <div className="App-Content">
