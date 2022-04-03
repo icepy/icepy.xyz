@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import './style.css';
-import myIcon from "../../img/icon.jpg";
+import myIcon from "../../img/icon.jpeg";
 
 class Header extends Component {
   render(){
@@ -12,6 +12,13 @@ class Header extends Component {
             <div><a href="/"><img src={ myIcon } alt="" /></a></div>
           </div>
           <div className="header-nav-link">
+            <a 
+              href="https://mirror.xyz/icepy.eth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mirror
+            </a>
             <a
               href="https://github.com/icepy"
               target="_blank"
@@ -26,19 +33,12 @@ class Header extends Component {
             >
               Gitcoin
             </a>
-            < a 
-              href="https://zhuanlan.zhihu.com/fed-talk"
+            <a
+              href="https://twitter.com/i_icepy"
               target="_blank"
               rel="noopener noreferrer"
             >
-              专栏
-            </a>
-            < a 
-              href="https://www.acharvested.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              桑田
+              Twitter
             </a>
           </div>
         </div>

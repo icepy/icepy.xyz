@@ -1,12 +1,19 @@
 .App-Header {
   width: 100%;
-  background-color: #282c34;
-  height: 250px;
-  color: #ffffff;
+  background-color: #fff;
+  color: #fff;
   display: flex;
+  height: 300px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  background-size: cover;
+}
+
+.App-Header img{
+  height: 300px;
 }
 
 .App-My-Des{
