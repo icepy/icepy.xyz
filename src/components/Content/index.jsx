@@ -17,7 +17,7 @@ export default class Content extends Component {
         </div>
         <div className="App-Content">
           <p>
-            Hi，我是<strong>wen（五溪）</strong>
+            Hi，我是<strong> wen </strong>
           </p>
           <p>  
             2012年开始从事编程的工作，经历了前端到大前端变革的整个过程。
