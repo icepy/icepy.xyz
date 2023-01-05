@@ -25,3 +25,7 @@
 .App-Content a{
   color: #0084FF;
 }
+
+.App-Content a:hover{
+  text-decoration: underline;
+}

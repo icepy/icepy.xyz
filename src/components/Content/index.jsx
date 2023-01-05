@@ -27,7 +27,7 @@ export default class Content extends Component {
             在 <strong>Web前端，移动Hybrid容器架构，小程序容器架构</strong> 上有着丰富的实践和沉淀，
             其他技术方向上如 Node.js Rust 都有一定的涉猎。
           </p>
-          <p>热衷于 Web3 技术的内容分享，深入理解 <strong>以太坊平台</strong> 的设计与原理，熟练 Solidity ethers.js Graph Chainlink 等开发技术，<strong>声明：并未参与任何区块链项目，挖矿或交易。</strong></p>
+          <p>热衷于 Web3 技术的内容分享，深入理解 <strong>以太坊平台</strong> 的设计与原理，熟练 Solidity ethers.js Graph Chainlink 等开发技术。</p>
           <p>在团队管理上追求务实，有效沟通，有能力带领团队解决问题，完成目标，落实结果。</p>
           <p>
             在生活中我喜欢烹饪食物，维修摩托车和骑着摩托车旅行，如果你也喜欢骑着摩托车旅行，不妨坐下来和我聊聊。
