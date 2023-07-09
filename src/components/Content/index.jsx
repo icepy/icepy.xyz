@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import bgImage from "../../img/bg.jpeg";
+import bgImage from "../../img/bg.jpg";
 
 const bg = { 
   backgroundImage: `url(${bgImage})`,
@@ -17,7 +17,7 @@ export default class Content extends Component {
         </div>
         <div className="App-Content">
           <p>
-            Hi，我是<strong> wen </strong>
+            Hi，我是<strong> icepy </strong>
           </p>
           <p>  
             2012年开始从事编程的工作，经历了前端到大前端变革的整个过程。
@@ -32,28 +32,8 @@ export default class Content extends Component {
           <p>
             在生活中我喜欢烹饪食物，维修摩托车和骑着摩托车旅行，如果你也喜欢骑着摩托车旅行，不妨坐下来和我聊聊。
           </p>
-          <ul>
-            <li>
-              <a
-                href="https://mp.weixin.qq.com/s/L-h6Hh6XlSL09Uy2d3ro2A"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                二千多公里-怀化至大理
-              </a>
-            </li>
-            <li>
-              <a 
-                href="https://mp.weixin.qq.com/s/6VphoytSWRPbhMDD3-Tg4Q"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                一个人一辆摩托车：走遍中国（一）
-              </a>
-            </li>
-          </ul>
           <p>
-            目前我在湘西，从事自己喜欢的工作，认真快乐的生活。
+            目前我在洪江，从事自己喜欢的工作，认真快乐的生活。
           </p>
           <p>
             最后我想感谢，在我人生旅途中遇见的你们。

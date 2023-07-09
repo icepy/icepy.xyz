@@ -12,6 +12,13 @@ class Header extends Component {
             <div><a href="/"><img src={ myIcon } alt="" /></a></div>
           </div>
           <div className="header-nav-link">
+            <a
+              href="https://twitter.com/i_icepy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
             <a 
               href="https://mirror.xyz/icepy.eth"
               target="_blank"
@@ -25,20 +32,6 @@ class Header extends Component {
               rel="noopener noreferrer"
             >
               Github
-            </a>
-            <a
-              href="https://gitcoin.co/icepy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Gitcoin
-            </a>
-            <a
-              href="https://twitter.com/i_icepy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
             </a>
           </div>
         </div>
