@@ -13,18 +13,11 @@ class Header extends Component {
           </div>
           <div className="header-nav-link">
             <a
-              href="https://twitter.com/i_icepy"
+              href="https://x.com/i_icepy"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Twitter
-            </a>
-            <a 
-              href="https://mirror.xyz/icepy.eth"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Mirror
+              X
             </a>
             <a
               href="https://github.com/icepy"
