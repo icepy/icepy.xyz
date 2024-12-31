@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import './style.css';
-import myIcon from "../../img/avatar.jpg";
+import myIcon from "../../img/avatar.jpeg";
 
 class Header extends Component {
   render(){
